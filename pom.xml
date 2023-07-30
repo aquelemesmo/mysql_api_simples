@@ -1,17 +1,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>br.jhonatastomaz</groupId>
+  <groupId>com.github.jhonatas48</groupId>
   <artifactId>api-mysql</artifactId>
-  <version>0.0.2-alpha</version>
+  <version>0.0.2.0.1</version>
+  <packaging>jar</packaging>
+  
   <distributionManagement> 
     <repository>
         <id>github</id>
-        <name>GitHub Packages</name>
+        <name>jhonatas48</name>
         <url>https://maven.pkg.github.com/jhonatas48/mysql_api_simples</url>
     </repository>
-	
   </distributionManagement>
-  
   <dependencies>
     <!-- https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc -->
 	<dependency>	
@@ -26,17 +26,19 @@
     	<artifactId>mysql-connector-j</artifactId>
     	<version>8.0.33</version>
 	</dependency>
+   <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+	<dependency>
+    	<groupId>org.apache.logging.log4j</groupId>
+    	<artifactId>log4j-core</artifactId>
+    	<version>2.20.0</version>
+	</dependency>
 
-		<dependency>
-   			 <groupId>log4j</groupId>
-    		<artifactId>log4j</artifactId>
-   	 		<version>1.2.17</version>
-		</dependency>
+
   </dependencies>
   
   <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 </project>
